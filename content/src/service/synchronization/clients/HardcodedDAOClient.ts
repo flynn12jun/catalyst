@@ -1,4 +1,4 @@
-import { CatalystByIdResult, getAllCatalystFromProvider } from '@dcl/catalyst-contracts'
+import { CatalystByIdResult, getAllCatalystFromProvider } from '@zqbflynn/catalyst-contracts'
 import { HTTPProvider, hexToBytes } from 'eth-connect'
 
 export interface DaoComponent {

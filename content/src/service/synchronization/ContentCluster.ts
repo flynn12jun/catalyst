@@ -1,4 +1,4 @@
-import { CatalystByIdResult } from '@dcl/catalyst-contracts'
+import { CatalystByIdResult } from '@zqbflynn/catalyst-contracts'
 import { sleep } from '@dcl/snapshots-fetcher/dist/utils'
 import { ILoggerComponent } from '@well-known-components/interfaces'
 import future from 'fp-future'

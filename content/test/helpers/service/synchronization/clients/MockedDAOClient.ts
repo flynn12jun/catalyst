@@ -1,4 +1,4 @@
-import { CatalystByIdResult } from '@dcl/catalyst-contracts';
+import { CatalystByIdResult } from '@zqbflynn/catalyst-contracts';
 import { EthAddress } from '@dcl/crypto';
 import { DaoComponent } from '../../../../../src/service/synchronization/clients/HardcodedDAOClient';
 

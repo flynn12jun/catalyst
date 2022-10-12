@@ -4,7 +4,7 @@ import {
   ListContract,
   nameDenylistForProvider,
   poiListForProvider
-} from '@dcl/catalyst-contracts'
+} from '@zqbflynn/catalyst-contracts'
 import { TimeRefreshedDataHolder } from '../../utils/TimeRefreshedDataHolder'
 import { HTTPProvider, bytesToHex } from 'eth-connect'
 
