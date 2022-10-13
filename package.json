@@ -53,5 +53,8 @@
   },
   "jest-junit": {
     "addFileAttribute": "true"
+  },
+  "dependencies": {
+    "@zqbflynn/catalyst-node-commons": "^0.1.0"
   }
 }

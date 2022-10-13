@@ -19,7 +19,8 @@ export const DEFAULT_ENS_OWNER_PROVIDER_URL_TESTNET =
 const DEFAULT_ENS_OWNER_PROVIDER_URL_MAINNET = 'https://api.thegraph.com/subgraphs/name/decentraland/marketplace'
 export const DEFAULT_LAND_MANAGER_SUBGRAPH_TESTNET =
   'https://api.thegraph.com/subgraphs/name/decentraland/land-manager-goerli'
-export const DEFAULT_LAND_MANAGER_SUBGRAPH_MAINNET = 'https://api.thegraph.com/subgraphs/name/decentraland/land-manager'
+export const DEFAULT_LAND_MANAGER_SUBGRAPH_MAINNET =
+  'http://192.168.215.27:8000/subgraphs/name/decentraland/land-manager'
 export const DEFAULT_COLLECTIONS_SUBGRAPH_TESTNET =
   'https://api.thegraph.com/subgraphs/name/decentraland/collections-ethereum-goerli'
 export const DEFAULT_COLLECTIONS_SUBGRAPH_MAINNET =

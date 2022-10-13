@@ -42,6 +42,7 @@ import { createSynchronizationManager } from './service/synchronization/Synchron
 import { createServerValidator } from './service/validations/server'
 import { createExternalCalls, createSubGraphsComponent, createValidator } from './service/validations/validator'
 import { AppComponents } from './types'
+import { networks } from '@zqbflynn/catalyst-node-commons'
 
 export async function initComponentsWithEnv(env: Environment): Promise<AppComponents> {
   const metrics = createTestMetricsComponent(metricsDeclaration)
@@ -76,12 +77,16 @@ export async function initComponentsWithEnv(env: Environment): Promise<AppCompon
   const storage = await createFileSystemContentStorage({ fs }, contentFolder)
 
   const ethNetwork: string = env.getConfig(EnvironmentConfig.ETH_NETWORK)
-  const ethereumProvider = new HTTPProvider(
-    `https://rpc.decentraland.org/${encodeURIComponent(ethNetwork)}?project=catalyst-content`,
-    {
-      fetch: fetcher.fetch
-    }
-  )
+  // todo 这里先写死，后续在该
+  const network = networks['zqb']
+
+  const ethereumProvider = new HTTPProvider(network.http, { fetch: fetcher.fetch })
+  // const ethereumProvider = new HTTPProvider(
+  //   `https://rpc.decentraland.org/${encodeURIComponent(ethNetwork)}?project=catalyst-content`,
+  //   {
+  //     fetch: fetcher.fetch
+  //   }
+  // )
   const daoClient = await DAOClientFactory.create(env, ethereumProvider)
   const authenticator = new ContentAuthenticator(
     ethereumProvider,
