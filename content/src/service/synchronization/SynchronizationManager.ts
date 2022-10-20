@@ -37,6 +37,7 @@ export const createSynchronizationManager = (components: ContentSyncComponents):
         synchronizationState = SynchronizationState.SYNCING
         components.metrics.observe('dcl_content_server_sync_state', {}, 1)
         const desiredJobNames = new Set(components.contentCluster.getAllServersInCluster())
+        console.log('====>同步的节点', desiredJobNames)
         // the job names are the contentServerUrl
         return components.synchronizationJobManager.setDesiredJobs(desiredJobNames)
       }

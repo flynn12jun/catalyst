@@ -321,7 +321,7 @@
     "@well-known-components/logger" "^3.0.0"
     "@well-known-components/metrics" "1.1.3"
     "@well-known-components/thegraph-component" "^1.3.0"
-    "@zqbflynn/catalyst-contracts" "^3.0.1"
+    "@zqbflynn/catalyst-contracts" "^3.0.4"
     "bloom-filters" "^3.0.0"
     "compression" "1.7.4"
     "cors" "2.8.5"
@@ -1820,11 +1820,11 @@
   "version" "7.0.11"
 
 "@types/keyv@*":
-  "integrity" "sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg=="
-  "resolved" "https://registry.npmjs.org/@types/keyv/-/keyv-3.1.4.tgz"
-  "version" "3.1.4"
+  "integrity" "sha512-xoBtGl5R9jeKUhc8ZqeYaRDx04qqJ10yhhXYGmJ4Jr8qKpvMsDQQrNUvF/wUJ4klOtmJeJM+p2Xo3zp9uaC3tw=="
+  "resolved" "https://registry.npmjs.org/@types/keyv/-/keyv-4.2.0.tgz"
+  "version" "4.2.0"
   dependencies:
-    "@types/node" "*"
+    "keyv" "*"
 
 "@types/long@^4.0.1":
   "integrity" "sha512-MqTGEo5bj5t157U6fA/BiDynNkn0YknVdh48CMPkTSpFTVmvao5UQmm7uEF6xBEo7qIMAlY/JSleYaE6VOdpaA=="
@@ -2215,23 +2215,23 @@
     "@well-known-components/http-server" "^1.1.0"
     "@well-known-components/interfaces" "^1.1.0"
 
-"@zqbflynn/catalyst-contracts@^3.0.1":
-  "integrity" "sha512-G3BflrJvwZl8h92thbKOpwsxv3lrWhMOCVEMU+Gvash1PKOkbYFtaVeLq3md7NTrpf5+dIiRc2sAVAs3yaj/rQ=="
-  "resolved" "https://registry.npmjs.org/@zqbflynn/catalyst-contracts/-/catalyst-contracts-3.0.1.tgz"
-  "version" "3.0.1"
+"@zqbflynn/catalyst-contracts@^3.0.4":
+  "integrity" "sha512-RqlnfxgjxxBI48SR3KhJFIzcNcdvg4Y8H4xExhyzek76wUcrj0dz9CAZI5V3u934g8B1auLMtjGycEmevUKEAQ=="
+  "resolved" "https://registry.npmjs.org/@zqbflynn/catalyst-contracts/-/catalyst-contracts-3.0.4.tgz"
+  "version" "3.0.4"
   dependencies:
     "eth-connect" "^6.0.2"
 
-"@zqbflynn/catalyst-node-commons@^0.1.0":
-  "integrity" "sha512-HFuJ3pe2q5LiDGSSPTM28o1eREM//2/TOYWdkGD1DkW/07VDnUs3jMw/zx6nT5zVir33WpD+cNyMDblSiPDG0A=="
-  "resolved" "https://registry.npmjs.org/@zqbflynn/catalyst-node-commons/-/catalyst-node-commons-0.1.0.tgz"
-  "version" "0.1.0"
+"@zqbflynn/catalyst-node-commons@^0.1.4":
+  "integrity" "sha512-hdm53BrmSRq1srfELRvJ24pdxgOkpk9mjZAjut7InBBI6AC5UlK9GOSJQ0EUCRi7xj3S5FRShxV00wM93g65/g=="
+  "resolved" "https://registry.npmjs.org/@zqbflynn/catalyst-node-commons/-/catalyst-node-commons-0.1.4.tgz"
+  "version" "0.1.4"
   dependencies:
     "@typescript-eslint/parser" "5.21.0"
     "@well-known-components/http-server" "^1.0.0"
     "@well-known-components/interfaces" "^1.1.1"
     "@well-known-components/metrics" "^1.1.3"
-    "@zqbflynn/catalyst-contracts" "^3.0.1"
+    "@zqbflynn/catalyst-contracts" "^3.0.4"
     "dcl-crypto" "2.3.0"
     "eslint" "8.14.0"
     "express" "4.18.0"
@@ -6100,7 +6100,7 @@
     "node-gyp-build" "^4.2.0"
     "readable-stream" "^3.6.0"
 
-"keyv@^4.0.0":
+"keyv@*", "keyv@^4.0.0":
   "integrity" "sha512-2YvuMsA+jnFGtBareKqgANOEKe1mk3HKiXu2fRmAfyxG0MJAywNhi5ttWA3PMjl4NmpyjZNbFifR2vNjW1znfA=="
   "resolved" "https://registry.npmjs.org/keyv/-/keyv-4.5.0.tgz"
   "version" "4.5.0"

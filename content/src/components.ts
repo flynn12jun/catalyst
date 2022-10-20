@@ -236,7 +236,7 @@ export async function initComponentsWithEnv(env: Environment): Promise<AppCompon
     failedDeploymentsCache,
     storage
   })
-
+  // 节点同步
   const synchronizationManager = createSynchronizationManager({
     synchronizationJobManager,
     logs,

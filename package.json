@@ -55,6 +55,7 @@
     "addFileAttribute": "true"
   },
   "dependencies": {
-    "@zqbflynn/catalyst-node-commons": "^0.1.0"
+    "@zqbflynn/catalyst-contracts": "^3.0.4",
+    "@zqbflynn/catalyst-node-commons": "^0.1.4"
   }
 }
