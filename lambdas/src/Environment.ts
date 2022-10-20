@@ -11,7 +11,7 @@ import { getCommsServerUrl } from './utils/commons'
 import { SmartContentClientFactory } from './utils/SmartContentClientFactory'
 import { SmartContentServerFetcherFactory } from './utils/SmartContentServerFetcherFactory'
 import { TheGraphClientFactory } from './utils/TheGraphClientFactory'
-import { networks } from '@zqbflynn/catalyst-node-commons'
+import { getNetwork } from '@zqbflynn/catalyst-node-commons'
 
 const DEFAULT_SERVER_PORT = 7070
 export const DEFAULT_ETH_NETWORK = 'goerli'
@@ -261,10 +261,8 @@ export class EnvironmentBuilder {
     this.registerBeanIfNotAlreadySet(env, Bean.THE_GRAPH_CLIENT, () => theGraphClient)
     this.registerBeanIfNotAlreadySet(env, Bean.OFF_CHAIN_MANAGER, () => OffChainWearablesManagerFactory.create(env))
 
-    //const ethNetwork: string = env.getConfig(EnvironmentConfig.ETH_NETWORK)
-    // todo 这里先写死，后续在该
-    const network = networks['zqb']
-
+    const ethNetwork: string = env.getConfig(EnvironmentConfig.ETH_NETWORK)
+    const network = getNetwork(ethNetwork)
     const ethereumProvider = new HTTPProvider(network.http, { fetch })
     // const ethereumProvider = new HTTPProvider(
     //   `https://rpc.decentraland.org/${encodeURIComponent(ethNetwork)}?project=catalyst-lambdas`,
